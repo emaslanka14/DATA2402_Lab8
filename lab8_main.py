@@ -54,6 +54,8 @@ def task2_access_data(df):
     print('\n')
     print(df.loc[5:9, 'working-hours':'standby-pay'])
 
+    return df.to_dict()
+
 def task3_filter_data(df):
     # 1. Select all disputes with a good outcome
     print('====================== Select all disputes with a good outcome ======================\n')
@@ -93,6 +95,8 @@ def task3_filter_data(df):
     print('====================== Maximum wage increase ======================\n')
     print(df['wage-increase-first-year'].max())
     print('\n')
+
+    return df.to_dict()
 
 def main():
  
